@@ -1,0 +1,16 @@
+certifi==2026.4.22
+charset-normalizer==3.4.7
+Faker==40.15.0
+idna==3.13
+iniconfig==2.3.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+packaging==26.2
+pluggy==1.6.0
+Pygments==2.20.0
+pytest==9.0.3
+pytest-html==4.2.0
+pytest-metadata==3.1.1
+python-dotenv==1.2.2
+requests==2.33.1
+urllib3==2.6.3
