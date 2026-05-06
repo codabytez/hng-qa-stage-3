@@ -1,10 +1,27 @@
 # Zedu API Automation — HNG QA Stage 3
 
+![CI](https://github.com/codabytez/hng-qa-stage-3/actions/workflows/ci.yml/badge.svg)
+
 Structured API automation project testing the Zedu platform backend using Python and Pytest.
 
 ## Project Overview
 
 This project contains 48 automated test cases covering authentication, user management, and organisation endpoints of the Zedu API. Tests are organized by endpoint group, fully independent, idempotent, and use dynamically generated test data.
+
+## CI Pipeline
+
+This project uses GitHub Actions for continuous integration.
+
+The pipeline triggers on every push and pull request and:
+
+1. Sets up Python 3.11
+2. Installs all dependencies from requirements.txt
+3. Creates the .env file from GitHub Secrets
+4. Runs the full test suite with pytest
+5. Uploads JUnit XML results as an artifact
+6. Fails the build if any test fails
+
+Environment variables used: `BASE_URL`, `TEST_EMAIL`, `TEST_PASSWORD` — stored as GitHub repository secrets.
 
 ## Prerequisites
 
@@ -52,6 +69,10 @@ Run a specific test file:
 Run with HTML report:
 
     pytest tests/ -v --html=report.html
+
+Run with JUnit XML report:
+
+    pytest tests/ -v --junitxml=report.xml
 
 ## Test File Coverage
 
