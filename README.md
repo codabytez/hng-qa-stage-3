@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/codabytez/hng-qa-stage-3/actions/workflows/ci.yml/badge.svg)
 
-Structured API automation project testing the Zedu platform backend using Python and Pytest.
+Structured API automation project testing the Zedu platform backend using Python and Pytest
 
 ## Project Overview
 
